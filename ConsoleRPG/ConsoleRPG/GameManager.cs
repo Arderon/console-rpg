@@ -5,7 +5,7 @@ namespace ConsoleRPG
 {
     public class GameManager
     {
-        public string Name { get; private set; }
+        public string Name { get; private set; } = "";
 
         public void StartGame()
         {
@@ -16,7 +16,7 @@ namespace ConsoleRPG
         public void CreateCharacter()
         {
             ChooseName();
-            Console.WriteLine($"SI Arsen The Creator of ConsoleRPG declare that you are now {Name}");
+            Console.WriteLine($"I Arsen The Creator of ConsoleRPG declare that you are now {Name}");
         }
 
         private void ChooseName()
